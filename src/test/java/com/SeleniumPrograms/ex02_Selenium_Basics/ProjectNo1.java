@@ -16,8 +16,7 @@ public class ProjectNo1 extends Common_To_All {
 
     public void test_verify_text(){
 
-        WebDriver driver = new ChromeDriver();
-        openBrowser(driver,"https://katalon-demo-cura.herokuapp.com");
+        openBrowser("https://katalon-demo-cura.herokuapp.com");
 
         if(driver.getPageSource().contains("CURA Healthcare Service")){
             System.out.println("Test case Passed");
